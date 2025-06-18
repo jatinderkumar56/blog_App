@@ -8,11 +8,9 @@ import { v2 as cloudinary, UploadApiResponse } from "cloudinary";
 import { revalidatePath } from "next/cache";
 
 cloudinary.config({
-  // cloud_name: process.env.CLOUDNARY_CLOUD_NAME,
-  // api_key: process.env.CLOUDNARY_API_KEY,
-  // api_secret: process.env.CLOUDNARY_API_SECRET,
-  cloud_name:process.env.CLOUDINARY_CLOUD_NAME, // ✅ not CLOUDNARY
-api_key:process.env.CLOUDINARY_API_KEY  ,  // ✅ not CLOUDNARY
+ 
+  cloud_name:process.env.CLOUDINARY_CLOUD_NAME, // ✅
+api_key:process.env.CLOUDINARY_API_KEY  ,  // ✅
 api_secret: process.env.CLOUDINARY_API_SECRET
 });
 
@@ -114,14 +112,14 @@ console.log("Cloudinary config:", {
     };
   }
   try {
-    // ✅ Fix: Use `existingUser.id` instead of `userId` (which is `clerkUserId`)
+    
     await prisma.articles.create({
       data: {
         title: result.data.title,
         category: result.data.category,
         content: result.data.content,
         featuredImage: imageUrl,
-        authorId: existingUser.id, // ✅ Correct Foreign Key Usage
+        authorId: existingUser.id, // 
       },
     });
   } catch (error: unknown) {

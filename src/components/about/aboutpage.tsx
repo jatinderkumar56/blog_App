@@ -9,7 +9,7 @@ export default function AboutPage() {
             About <span className="text-[#A78BFA]">ByteCode</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
-            <span className="text-[#A78BFA] font-semibold">ByteCode</span> is more than just a blog. It's a hub for curious minds to
+            <span className="text-[#A78BFA] font-semibold">ByteCode</span> is more than just a blog. It&rsquo;s a hub for curious minds to
             explore insightful articles, thought-provoking stories, and expert
             commentary on <span className="text-[#A78BFA]">technology, lifestyle, innovation</span>, and beyond.
           </p>
@@ -21,8 +21,8 @@ export default function AboutPage() {
             <p className="text-gray-200">
               At <span className="text-[#A78BFA] font-medium">ByteCode</span>, our goal is to create a space where ideas flow
               freely, knowledge is shared widely, and readers walk away more
-              informed and inspired than before. Whether you're a tech
-              enthusiast, a creative soul, or a lifelong learner — there's
+              informed and inspired than before. Whether you&rsquo;re a tech
+              enthusiast, a creative soul, or a lifelong learner — there&rsquo;s
               something here for you.
             </p>
 

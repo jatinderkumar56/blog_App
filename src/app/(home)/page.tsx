@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import Image from "next/image";
+
 
 
 import HeroSection from "@/components/home/heroSection";
@@ -7,7 +7,7 @@ import TopArticle from "@/components/home/header/toparticle";
 import Link from "next/link";
 import { BlogFooter } from "@/components/home/header/blogfooter";
 import { Suspense } from "react";
-import { AllArticlesPageSkeleton } from "../articles/page";
+
 
 export default   async function Page(){
   console.log("home page loading")

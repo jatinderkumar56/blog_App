@@ -1,20 +1,5 @@
-// "use server"
 
-// import { prisma } from "@/lib/prisma";
-// import { revalidatePath } from "next/cache";
- 
-// export const deleteArticle = async (articleId: string) => {
-// // First delete all comments related to the article
-//   await prisma.comment.deleteMany({
-//     where: { articleId }
-//   });
-//     await prisma.articles.delete({
-//         where: {
-//             id: articleId,
-//         },
-//     });
-//     revalidatePath("/dashboard");
-// }
+
 "use server";
 
 import { prisma } from "@/lib/prisma";

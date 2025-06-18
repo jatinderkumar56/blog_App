@@ -3,7 +3,7 @@ import React from 'react'
 import RecentArticle from '@/components/dashboard/recentarticle'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Clock, FileText, MessageCircle, PlusCircle } from 'lucide-react'
+import { Clock, FileText, PlusCircle } from 'lucide-react'
 import Link from 'next/link'
 import { prisma } from '@/lib/prisma'
 

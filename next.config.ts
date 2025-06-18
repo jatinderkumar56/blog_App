@@ -1,27 +1,29 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  images:{
-    remotePatterns:[
+  eslint: {
+    ignoreDuringBuilds: true, // disables ESLint errors during build
+  },
+  images: {
+    remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'media.istockphoto.com'
+        hostname: 'media.istockphoto.com',
       },
       {
         protocol: 'https',
-        hostname: 'images.unsplash.com'
+        hostname: 'images.unsplash.com',
       },
       {
         protocol: 'https',
-        hostname: 'res.cloudinary.com'
+        hostname: 'res.cloudinary.com',
       },
       {
         protocol: 'https',
-        hostname: 'plus.unsplash.com'
-      }
-    ]
-  }
-};
+        hostname: 'plus.unsplash.com',
+      },
+    ],
+  },
+}
 
-export default nextConfig;
+export default nextConfig

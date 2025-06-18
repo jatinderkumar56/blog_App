@@ -1,6 +1,6 @@
-import { Card } from "@/components/ui/card"; 
+
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-import { MessageCircle } from "lucide-react";
+
 import { Prisma } from "@prisma/client";
 
 import { prisma } from "@/lib/prisma"; 

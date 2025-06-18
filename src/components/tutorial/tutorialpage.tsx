@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function TutorialPage() {
@@ -12,8 +13,8 @@ export default function TutorialPage() {
             Learn at your own pace with hands-on tutorials in{" "}
             <span className="text-[#A78BFA]">Web Development</span>,{" "}
             <span className="text-[#A78BFA]">Programming</span>, and{" "}
-            <span className="text-[#A78BFA]">Tech Tools</span>. Whether you're a
-            beginner or looking to sharpen your skills — we've got you covered.
+            <span className="text-[#A78BFA]">Tech Tools</span>. Whether you&rsquo;re a
+            beginner or looking to sharpen your skills — we&rsquo;ve got you covered.
           </p>
         </section>
 
@@ -42,7 +43,8 @@ export default function TutorialPage() {
               key={index}
               className="bg-[#1c1a35] rounded-xl  overflow-hidden shadow-md transition hover:shadow-xl"
             >
-              <img
+              
+             <Image
     src={tutorial.image}
     alt={tutorial.title}
     className="w-full h-48 object-cover transform transition-transform duration-300 ease-in-out hover:scale-105"

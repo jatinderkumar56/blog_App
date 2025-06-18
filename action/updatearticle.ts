@@ -12,7 +12,7 @@ cloudinary.config({
     api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 
-// ✅ Schema for validating input fields
+//
 const updateArticleSchema = z.object({
     title: z.string().min(3).max(100),
     category: z.string().min(3).max(50),
@@ -34,7 +34,7 @@ export const updateArticles = async (
     prevState: UpdateArticleFormState,
     formData: FormData,
 ): Promise<UpdateArticleFormState> => {
-    // ✅ Validate input fields
+    //  Validate input fields
     const result = updateArticleSchema.safeParse({
         title: formData.get("title"),
         category: formData.get("category"),
@@ -47,7 +47,7 @@ export const updateArticles = async (
         };
     }
 
-    // ✅ Authenticate user
+    // Authenticate user
     const { userId } = await auth();
     if (!userId) {
         return {
@@ -55,7 +55,7 @@ export const updateArticles = async (
         };
     }
 
-    // ✅ Find the existing article
+    // Find the existing article
     const existingArticle = await prisma.articles.findUnique({
         where: { id: articleId },
     });
@@ -66,7 +66,7 @@ export const updateArticles = async (
         };
     }
 
-    // ✅ Check if the user is the author
+    // Check if the user is the author
     const user = await prisma.user.findUnique({
         where: { clerkUserId: userId },
     });
@@ -79,7 +79,7 @@ export const updateArticles = async (
 
     let imageUrl = existingArticle.featuredImage; // Default to the existing image
 
-    // ✅ Check if a new image is provided
+    // Check if a new image is provided
     const imageFile = formData.get("featuredImage") as File | null;
     if (imageFile && imageFile.name !== "undefined") {
         try {
@@ -124,7 +124,7 @@ export const updateArticles = async (
         }
     }
 
-    // ✅ Update the article in the database
+    //  Update the article in the database
     try {
         await prisma.articles.update({
             where: { id: articleId },
