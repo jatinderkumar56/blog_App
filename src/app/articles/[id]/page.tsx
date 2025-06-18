@@ -1,9 +1,10 @@
 
-// import SingleArticleDetailPage from "@/components/article/single-article-page";
+export const dynamic = "force-dynamic";
 import { SingleArticleDetailPage } from "@/components/article/single-article-page";
 import { prisma } from "@/lib/prisma";
 import React from "react";
 import { notFound } from "next/navigation"; // use this to trigger 404
+
 type ArticleDetailPageProps = {
 params: Promise<{ id: string }>;
 
