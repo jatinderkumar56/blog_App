@@ -6,10 +6,10 @@ export default function AboutPage() {
       <main className="container mx-auto px-6 py-20">
         <section className="text-center space-y-6">
           <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
-            About <span className="text-[#A78BFA]">ByteCode</span>
+            About <span className="text-[#A78BFA]">BlogCode</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
-            <span className="text-[#A78BFA] font-semibold">ByteCode</span> is more than just a blog. It&rsquo;s a hub for curious minds to
+            <span className="text-[#A78BFA] font-semibold">BlogCode</span> is more than just a blog. It&rsquo;s a hub for curious minds to
             explore insightful articles, thought-provoking stories, and expert
             commentary on <span className="text-[#A78BFA]">technology, lifestyle, innovation</span>, and beyond.
           </p>
@@ -19,7 +19,7 @@ export default function AboutPage() {
           <div className="space-y-5">
             <h2 className="text-2xl font-bold text-[#A78BFA]">Our Mission</h2>
             <p className="text-gray-200">
-              At <span className="text-[#A78BFA] font-medium">ByteCode</span>, our goal is to create a space where ideas flow
+              At <span className="text-[#A78BFA] font-medium">BlogCode</span>, our goal is to create a space where ideas flow
               freely, knowledge is shared widely, and readers walk away more
               informed and inspired than before. Whether you&rsquo;re a tech
               enthusiast, a creative soul, or a lifelong learner — there&rsquo;s
